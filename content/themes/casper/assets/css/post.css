@@ -1,0 +1,47 @@
+.post__title {
+  font-size: 20px;
+  color: #333;
+  font-weight: normal;
+}
+
+.post__content-wrapper {
+  color: #333;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.read-more-title {
+  color: #444;
+  display: block;
+  overflow: hidden;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.read-more-posts__wrapper {
+  border-bottom: 1px solid #eee;
+}
+
+.read-more-posts__wrapper:last-child {
+  border: none;
+}
+
+.back-button {
+  float: right;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: #367cd8;
+  color: white;
+  margin-top: 16px;
+}
+
+.back-button__text {
+  padding: 16px 32px;
+  font-size: 16px;
+}

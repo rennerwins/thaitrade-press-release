@@ -1,0 +1,18 @@
+routes:
+
+collections:
+  /:
+    permalink: /press-releases/detail/{slug}/
+    template: index
+  /press-releases/all/:
+    permalink: /press-releases/all/
+    template: index
+  /press-releases/event/:
+    permalink: /press-releases/event/
+    template: event
+  /press-releases/press-release/:
+    permalink: /press-releases/press-release/
+    template: press
+  /press-releases/in-the-news/:
+    permalink: /press-releases/in-the-news/
+    template: news

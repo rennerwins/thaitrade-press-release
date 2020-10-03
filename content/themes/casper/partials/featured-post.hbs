@@ -1,0 +1,49 @@
+<section class="featured-section">
+  <div class="row pt-4">
+    {{#get "posts" filter="featured:true" limit="3"}}
+    {{#if posts}}
+
+    {{!-- Main featured --}}
+    {{#foreach posts}}
+    {{#if @first}}
+    <div class="col-md-8 col-xs-12 mb-3">
+      <div class="featured__wrapper">
+        <a href="{{url}}">
+          <img class="featured__image" src="{{img_url feature_image}}" alt={{title}} />
+        </a>
+        <div class="featured__banner">
+          <a href="{{url}}" class="featured__banner--title">{{title}}</a>
+          <time class="post-card__date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM DD, YYYY"}}</time>
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    {{/foreach}}
+
+    {{!-- Secondary featured --}}
+    <div class="col-md-4 col-xs-12">
+      <div class="row">
+        {{#foreach posts}}
+        {{#if @index}}
+        <div class="col-6 col-md-12 mb-3">
+          <div class="featured__wrapper">
+            <a href="{{url}}">
+              <img class="featured__image" src="{{img_url feature_image}}" alt={{title}} />
+            </a>
+            <div class="featured__banner">
+              <a href="{{url}}" class="featured__banner--title">{{title}}</a>
+              <time class="post-card__date"
+                datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM DD, YYYY"}}</time>
+            </div>
+          </div>
+        </div>
+
+        {{/if}}
+        {{/foreach}}
+      </div>
+    </div>
+
+    {{/if}}
+    {{/get}}
+  </div>
+</section>

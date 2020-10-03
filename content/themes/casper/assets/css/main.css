@@ -1,0 +1,245 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #f2f2f2 !important;
+}
+
+.press-releases__wrapper {
+  background-color: #fff;
+}
+
+.press-releases__header-wrapper {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.press-releases__header-icon {
+  color: #083f88;
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.press-releases__header-text {
+  color: #444;
+  font-size: 1rem;
+}
+
+.featured__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured__wrapper {
+  position: relative;
+}
+
+.featured__banner {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  width: 100%;
+  color: #fff;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.featured__banner--title,
+.featured__banner--title:hover {
+  color: white;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+.featured__banner--title:hover {
+  text-decoration: underline;
+}
+
+.page-link {
+  border: 1px solid #d6d6d6;
+  background-color: transparent;
+  color: #707070;
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__container {
+  background-color: #023f88;
+  color: #fff;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body-wrapper {
+  flex: 1;
+}
+
+.footer__main-title {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.footer__menu-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu-item {
+  margin-bottom: 0;
+  padding: 2px 0;
+  font-size: 16;
+}
+
+@media (max-width: 1024px) and (min-width: 576px) {
+  .footer__menu-item {
+    font-size: 12px;
+  }
+}
+
+.footer__menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__logo {
+  height: 30px;
+  width: auto;
+}
+
+.footer__logo-wrapper a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.site-link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.globe-icon {
+  width: 1rem;
+}
+
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #fff;
+}
+
+.copyright__text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin: 15px auto 30px;
+}
+
+.link-icon {
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-icon .link-icon svg {
+  width: 100%;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+}
+
+.box-icon .link-icon.fb:hover {
+  color: #fff;
+  background: #31599d;
+}
+
+.box-icon .link-icon.ig:hover {
+  color: #fff;
+  background: #df3980;
+}
+
+.box-icon .link-icon.tw:hover {
+  color: #fff;
+  background: #00a4f9;
+}
+
+.box-icon .link-icon.yt:hover {
+  color: #fff;
+  background: #f00;
+}
+
+.header__container {
+  background: #fff;
+}
+
+.help-support {
+  display: flex;
+  align-items: center;
+}
+
+.link-item {
+  color: #231f20;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link-icon-header {
+  font-size: 14px;
+  color: #3371e3;
+  margin: 0;
+}
+
+.link-remark {
+  font-size: 12px;
+  color: #231f20;
+  opacity: 0.85;
+}
+
+.image-logo {
+  max-height: 48px;
+}

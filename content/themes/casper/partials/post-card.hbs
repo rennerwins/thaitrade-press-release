@@ -1,0 +1,28 @@
+<article class="post-card__wrapper">
+  <div class="post-card__image-wrapper">
+    <a href="{{url}}">
+      <img class="post-card__image img-fluid" src="{{img_url feature_image size="m"}}" alt="{{title}}" loading="lazy" />
+    </a>
+  </div>
+
+  <div>
+
+    <div class="post-card__caption-wrapper">
+      <p class="post-card__caption">
+        <a class="post-card__caption-link" href="{{url}}">
+          {{title}}
+        </a>
+      </p>
+    </div>
+
+    <div>
+      <time class="post-card__date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM DD, YYYY"}}</time>
+    </div>
+
+    <div>
+      <a class="post-card__read-more" href="{{url}}">
+        <span class="pr-1">Read More</span> <span class="fa fa-angle-right"></span>
+      </a>
+    </div>
+  </div>
+</article>

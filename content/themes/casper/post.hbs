@@ -1,0 +1,60 @@
+{{!< default}}
+
+<main>
+  <div class="container py-4">
+    <div class="press-releases-section">
+      <div class="row">
+        {{#post}}
+        <div class="col-md-8 col-xs-12">
+          <div class="press-releases__wrapper mt-3">
+            <div class="press-releases__header-wrapper px-3 py-2">
+              <span class="press-releases__header-icon">
+                <i class="fa fa-file-text-o"></i>
+              </span>
+
+              <span class="press-releases__header-text">PRESS RELEASES</span>
+            </div>
+
+            <div class="p-3">
+              <div class="post__title-wrapper mb-3">
+                <h1 class="post__title">{{title}}</h1>
+                <time class="post-card__date"
+                  datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM DD, YYYY"}}</time>
+              </div>
+
+              <div class="post__content-wrapper">
+                {{content}}
+              </div>
+
+            </div>
+          </div>
+        </div>
+        {{/post}}
+
+        <div class="col-md-4 col-xs-12">
+          <aside class="press-releases__wrapper mt-3">
+            <div class="press-releases__header-wrapper px-3 py-2">
+              <span class="press-releases__header-icon">
+                <i class="fa fa-hand-o-right"></i>
+              </span>
+
+              <span class="press-releases__header-text">MORE</span>
+            </div>
+
+            <div class="px-3">
+              {{> "read-more-post"}}
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 col-xs-12">
+          <button onclick="history.go(-1);return false;" class="btn btn-primary back-button">
+            <span class="back-button__text">Back</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

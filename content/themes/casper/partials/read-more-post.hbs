@@ -1,0 +1,14 @@
+{{#get "posts" limit="4" filter="id:-{{post.id}}" as |recents|}}
+{{#foreach recents}}
+<div class="row pb-3 pt-3 read-more-posts__wrapper">
+  <div class="col-lg-3 col-sm-2 col-xs-2 col_no_padding">
+    <img class="post-card__image img-fluid" src="{{img_url feature_image size="m"}}" alt="{{title}}" loading="lazy" />
+  </div>
+
+  <div class="col-lg-8 col-sm-8 col-xs-9 HL-detail">
+    <a class="read-more-title" href="{{url}}">{{title}}</a>
+    <time class="post-card__date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM DD, YYYY"}}</time>
+  </div>
+</div>
+{{/foreach}}
+{{/get}}

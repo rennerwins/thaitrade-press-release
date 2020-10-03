@@ -1,0 +1,50 @@
+{{!< default}}
+
+<main>
+  <div class="container py-4">
+    {{> "featured-post"}}
+    <section class="press-releases-section">
+      <div class="row">
+        <div class="col">
+          <div class="press-releases__wrapper mt-3">
+            <div class="press-releases__header-wrapper px-3 py-2 d-flex justify-content-between">
+              <div>
+                <span class="press-releases__header-icon">
+                  <i class="fa fa-file-text-o"></i>
+                </span>
+
+                <span class="press-releases__header-text">PRESS RELEASES</span>
+              </div>
+
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-expanded="false">
+                  In the news
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="/press-releases/all">All archived</a></li>
+                  <li><a class="dropdown-item" href="/press-releases/event">Event</a></li>
+                  <li><a class="dropdown-item" href="/press-releases/press-release">Press release</a></li>
+                  <li><a class="dropdown-item" href="/press-releases/in-the-news">In the news</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="p-3">
+              <div class="row">
+                {{#get "posts" filter="tags:in-the-news"}}
+                {{#foreach posts}}
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-2">
+                  {{> "post-card"}}
+                </div>
+                {{/foreach}}
+                {{/get}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{pagination}}
+  </div>
+</main>
