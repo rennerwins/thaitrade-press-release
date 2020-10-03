@@ -29,3 +29,8 @@ Once Docker container is ready, open up you browser and go to [http://localhost:
 `yarn restart` - Restart Docker container
 
 `yarn stop` - Stop Docker container
+
+### Notes
+To get a better understanding of how to customize Ghost CMS please read the [document](https://ghost.org/docs/api/v3/handlebars-themes/).
+
+You might also need some basic knowledge of [handlebars](https://handlebarsjs.com/guide/expressions.html) template engine.
