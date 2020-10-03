@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "docker-compose up -d"
+    "start": "docker-compose up -d",
+    "restart": "docker-compose restart",
+    "down": "docker-compose down"
   }
 }
