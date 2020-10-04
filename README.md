@@ -17,7 +17,7 @@ yarn start
 npm run start
 ```
 
-This will spin up Docker container with default port `2368` (port can be change in `docker-compose.yml` file).
+This will spin up Docker container with default port `2368`.
 
 Once Docker container is ready, open up you browser and go to [http://localhost:2368](http://localhost:2368) and you'll see the landing page of the site.
 
